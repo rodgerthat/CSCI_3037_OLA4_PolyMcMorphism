@@ -42,8 +42,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Circle.cs" />
+    <Compile Include="Cube.cs" />
+    <Compile Include="Cylinder.cs" />
+    <Compile Include="Shape.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sphere.cs" />
+    <Compile Include="Square.cs" />
+    <Compile Include="ThreeDimensionalShape.cs" />
+    <Compile Include="TwoDimensionalShape.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
