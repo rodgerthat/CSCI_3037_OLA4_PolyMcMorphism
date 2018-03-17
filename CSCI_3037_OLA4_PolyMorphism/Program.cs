@@ -21,7 +21,7 @@ namespace CSCI_3037_OLA4_PolyMorphism
             shapes[1] = new Square(71, 96, 10);
             shapes[2] = new Sphere(22, 87, 2);
             shapes[3] = new Cube(79, 61, 8);
-            shapes[5] = new Cylinder(38, 61, 8, 12);
+            shapes[4] = new Cylinder(38, 61, 8, 12);
 
 
             Console.Write("Shapes processed polymorphically:\n\n\n");

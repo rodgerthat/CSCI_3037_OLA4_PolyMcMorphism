@@ -23,6 +23,14 @@ namespace CSCI_3037_OLA4_PolyMorphism
                     cubeSide = value;
             }
         }
+
+        public Cube(int height, int width, int side) : base(height, width, side)
+        {
+            Name = "Cube";
+            cubeSide = side;
+
+        }
+
         public override decimal area()
         {
             double sides = Convert.ToDouble(cubeSide);
@@ -34,13 +42,6 @@ namespace CSCI_3037_OLA4_PolyMorphism
             double sides = Convert.ToDouble(cubeSide);
             double cubed = 3;
             return Convert.ToDecimal(Math.Pow(sides, cubed));
-        }
-
-        public Cube(int height, int width, int side) : base(height, width, side)
-        {
-            Name = "Cube";
-            cubeSide = side;
-
         }
 
         public override string ToString()

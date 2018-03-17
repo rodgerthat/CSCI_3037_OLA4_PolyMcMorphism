@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 namespace CSCI_3037_OLA4_PolyMorphism
 {
 
-    public abstract class Shape
+    public abstract class Shape : IComparable
     {
         // Base Class called Shape
         // All of it's methods will be inherited by its children and grandchildren

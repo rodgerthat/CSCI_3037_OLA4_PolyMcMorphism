@@ -23,6 +23,14 @@ namespace CSCI_3037_OLA4_PolyMorphism
                     sphereRadius = value;
             }
         }
+
+        public Sphere(int height, int width, int side) : base(height, width, side)
+        {
+            Name = "Sphere";
+            sphereRadius = side;
+
+        }
+
         public override decimal area()
         {
             double radius = Convert.ToDouble(sphereRadius);
@@ -36,16 +44,9 @@ namespace CSCI_3037_OLA4_PolyMorphism
             return Convert.ToDecimal((4 / 3) * Math.PI * Math.Pow(radius, cubed));
         }
 
-        public Sphere(int height, int width, int side) : base(height, width, side)
-        {
-            Name = "Sphere";
-            sphereRadius = side;
-
-        }
-
         public override string ToString()
         {
-            return string.Format("{0}: [{1} {2}] Radius: {3}\n{0}'s Area is {4}\n{0}'s Volume is {5}\n\n",
+            return string.Format("{0}: [{1} {2}] Radius: {3}\n{0}'s Area is {4}\n{0}'s Volume is {5}\n",
                  Name, Height, Width, Sides, area(), volume());
         }
     }
