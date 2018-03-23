@@ -29,6 +29,12 @@ namespace CSCI_3037_OLA4_PolyMorphism
                 Height, Width, Sides);
         }
 
+        public int CompareTo(object obj)
+        {
+             car c=(car)obj;
+             return String.Compare(this.make,c.make);V
+             return 
+        }
     }
 
 }
