@@ -31,9 +31,9 @@ namespace CSCI_3037_OLA4_PolyMorphism
 
         public int CompareTo(object obj)
         {
-             car c=(car)obj;
-             return String.Compare(this.make,c.make);V
-             return 
+            //car c=(car)obj;
+            //return String.Compare(this.make, c.make);
+            return 1;
         }
     }
 
